@@ -9,7 +9,15 @@
 namespace Behavioral\Observer;
 
 
+/**
+ * Interface ObserverInterface
+ * @package Behavioral\Observer
+ */
 interface ObserverInterface
 {
+    /**
+     * @param EventInterface $event
+     * @return mixed
+     */
     public function update(EventInterface $event);
 }

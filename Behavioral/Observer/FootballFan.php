@@ -9,20 +9,37 @@
 namespace Behavioral\Observer;
 
 
+/**
+ * Class FootballFan
+ * @package Behavioral\Observer
+ */
 class FootballFan implements ObserverInterface
 {
+    /**
+     * @var string
+     */
     private $name;
 
+    /**
+     * FootballFan constructor.
+     * @param string $name
+     */
     public function __construct(string $name)
     {
         $this->name = $name;
     }
 
+    /**
+     * @return string
+     */
     public function getName()
     {
         return $this->name;
     }
 
+    /**
+     * @param EventInterface $event
+     */
     public function update(EventInterface $event)
     {
         switch ($event->getName()) {

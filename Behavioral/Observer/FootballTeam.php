@@ -9,26 +9,49 @@
 namespace Behavioral\Observer;
 
 
+/**
+ * Class FootballTeam
+ * @package Behavioral\Observer
+ */
 class FootballTeam implements SubjectInterface
 {
+    /**
+     * @var string
+     */
     private $name;
+    /**
+     * @var array
+     */
     private $observers = [];
 
+    /**
+     * FootballTeam constructor.
+     * @param string $name
+     */
     public function __construct(string $name)
     {
         $this->name = $name;
     }
 
+    /**
+     * @return string
+     */
     public function getName()
     {
         return $this->name;
     }
 
+    /**
+     * @param ObserverInterface $observer
+     */
     public function attachObserver(ObserverInterface $observer)
     {
         $this->observers[] = $observer;
     }
 
+    /**
+     * @param ObserverInterface $observer
+     */
     public function detachObserver(ObserverInterface $observer)
     {
         foreach ($this->observers as $key => $obs) {
@@ -39,6 +62,9 @@ class FootballTeam implements SubjectInterface
         }
     }
 
+    /**
+     * @param EventInterface $event
+     */
     public function notify(EventInterface $event)
     {
         foreach ($this->observers as $observer) {

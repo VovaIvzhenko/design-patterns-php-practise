@@ -9,9 +9,19 @@
 namespace Behavioral\Observer;
 
 
+/**
+ * Interface EventInterface
+ * @package Behavioral\Observer
+ */
 interface EventInterface
 {
+    /**
+     * @return mixed
+     */
     public function getName();
 
+    /**
+     * @return mixed
+     */
     public function getSender();
 }
