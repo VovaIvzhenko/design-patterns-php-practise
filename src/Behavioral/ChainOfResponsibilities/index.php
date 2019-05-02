@@ -1,10 +1,10 @@
 <?php
 require_once '../../../vendor/autoload.php';
 
-use Behavioral\Observer\ChainOfResponsibilities\HandlerInterface as Handler;
-use Behavioral\Observer\ChainOfResponsibilities\AudiHandler as Audi;
-use Behavioral\Observer\ChainOfResponsibilities\BmwHandler as Bmw;
-use Behavioral\Observer\ChainOfResponsibilities\NissanHandler as Nissan;
+use Behavioral\ChainOfResponsibilities\HandlerInterface as Handler;
+use Behavioral\ChainOfResponsibilities\AudiHandler as Audi;
+use Behavioral\ChainOfResponsibilities\BmwHandler as Bmw;
+use Behavioral\ChainOfResponsibilities\NissanHandler as Nissan;
 
 function clientCode(Handler $handler) {
 	foreach (['240', '280', '300'] as $speed) {

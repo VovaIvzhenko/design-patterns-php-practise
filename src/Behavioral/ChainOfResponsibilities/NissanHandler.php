@@ -6,7 +6,7 @@
  * Time: 16:53
  */
 
-namespace Behavioral\Observer\ChainOfResponsibilities;
+namespace Behavioral\ChainOfResponsibilities;
 
 
 /**
