@@ -1,0 +1,16 @@
+{
+  "name": "ivzhenko.volodymyr/design-patterns",
+  "type": "library",
+  "authors": [
+    {
+      "name": "VovaIvzhenko",
+      "email": "ivzhen4@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "": ""
+    }
+  }
+}
