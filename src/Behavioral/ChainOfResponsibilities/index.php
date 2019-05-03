@@ -22,6 +22,8 @@ $audi = new Audi();
 $nissan = new Nissan();
 $bmw = new Bmw();
 
-$audi->setNext($nissan)->setNext($bmw);
+$audi->setNext($bmw)->setNext($nissan);
 
 clientCode($audi);
+echo '---------- \n';
+clientCode($nissan);
