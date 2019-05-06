@@ -13,7 +13,7 @@ namespace Structural\Proxy;
  * Class BankAccountInterfaceProxy
  * @package Structural\Proxy
  */
-class BankAccountProxy extends HeavyBankAccountInterface implements BankAccountInterface
+class BankAccountProxy extends HeavyBankAccount implements BankAccountInterface
 {
 	/**
 	 * @var
