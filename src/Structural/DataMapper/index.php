@@ -40,6 +40,7 @@ class DataMapperTest {
 }
 
 $dataMapperTest = new DataMapperTest();
+
 try{
 	$dataMapperTest->testCanMapUserFromStorage();
 	$dataMapperTest->testWillNotMapInvalidData();
